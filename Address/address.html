@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://images.indianexpress.com/2021/01/myntra.png?w=414" >
+
+    <title>ADDRESS</title>
+    <link rel="stylesheet" href="./Address.css">
+    
+</head>
+<body>
+    <div id="cartbar">
+        <div>
+          
+          <img
+            src="https://www.exchange4media.com/news-photo/110582-image-2021-01-30T121730.834.jpg"
+            alt="myntraLogo"
+            id="homePage"
+          />
+        </div>
+  
+        <div>
+          <p>
+            <span id="first">BAG </span>---------
+            <span id="second">ADDRESS</span> ---------
+            <span id="third">PAYMENT</span>
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://constant.myntassets.com/checkout/assets/img/sprite-secure.png"
+            alt="securelogo"
+          />
+          <span>100% SECURE</span>
+        </div>
+      </div>
+
+    <div id="addressContainer">
+        <div id="addressform">
+            <form >
+
+                <div id="t">CONTACT DETAILS</div>
+                <div><input required type="text" placeholder="Name" id="name"></div>
+                <div><input required  type="tel" placeholder="Mobile No" maxlength="10" id="mobno"></div>
+                <div id="t">ADDRESS</div>
+                <div><input required  type="tel" maxlength="6" id="pincode" placeholder="Pin Code"></div>
+                <div><input required  type="text" placeholder="Address (House No,Building,Street,Area)" id="Address"></div>
+                <div><input required  type="text" placeholder="Locality/Town" id="locality"></div>
+                <div id="citytown">
+                    <input required  type="text" placeholder="City/District" id="city">
+                    <input required  type="text" placeholder="State" id="state">
+                </div>
+                <div id="t">SAVE ADDRESS AS</div> 
+                <div id="adtype">
+                    <!-- <button id="home" value="home">
+                        Home
+                    </button>  -->
+
+                    <input type="button" id="home" value="Home"> 
+                    <input type="button" id="work" value="Work">
+                </div>
+                <p></p>
+                <div >
+                    <input type="checkbox" id="makedefault" name="makedefault" value="default"><label for="makedefault" id="lable">Make this my default address</label>
+                </div>
+                <input type="submit" value="Submit" id ="sub">
+
+            </form>
+        </div>
+        <div id="paymentamount">
+            <div class="pricedetails">PRICE DETAILS <span></span></div>
+            
+            <div class="total">
+              <span>Total MRP</span><span class="totalPrice">--</span>
+            </div>
+            <div class="discount">
+              <span>Discount on MRP</span><span class="filldiscount">--</span>
+            </div>
+            <div class="convinence">
+                <span>Convenience Fee </span><span > <span>Rs 99</span>  <span>Free</span> </span>
+              </div>
+            <div class="amount">
+              <span>Total Amount</span><span class="amount_pay">--</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="./address.js"></script>

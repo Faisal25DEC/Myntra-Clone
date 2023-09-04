@@ -1,0 +1,102 @@
+.nav{
+    display: flex;
+    position: sticky;
+    top: 0;
+    /* width: 100%; */
+   padding-left: 30px;
+    
+ 
+   
+}
+
+.profile{
+   
+margin-top: 10px;
+}
+.max{
+    margin-left: 1.5rem;
+    margin-right: 0.5rem;
+     display: flex;
+    flex-direction: column;
+   
+    width: fit-content;
+   
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 3rem;
+}
+.max img{
+    padding-bottom: 4px;
+}
+
+.item-center{
+    align-items: center;
+}
+.content-center{
+    justify-content: center;
+}
+.flex{
+    padding-left: 3px;
+}
+
+.flex >li {
+   
+    list-style: none;
+
+   
+    padding-top: 17px; 
+    }
+.flex li a{
+text-decoration:none ;
+color: black;
+font-weight: bold;
+list-style: none;
+padding: 0 15px;
+letter-spacing: 0.1em
+  
+}
+
+.hrline{
+    border:   0.5px solid grey ;
+    height: px;
+    width: 75%;
+    background-color: lightgrey;
+    margin-left: -10px;
+}
+.logo{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    margin-bottom: -5px ;
+    
+}
+.logohref{
+text-decoration: none;
+color: black;
+font-weight: bold;
+ font-size: 10px;
+ margin-top: 5px; 
+}
+
+.grid{
+   display: grid;
+    grid-template-columns: repeat(8,1fr);
+   
+   
+}
+.lastitem{
+    height: fit-content;
+    margin-bottom: -0.5rem;
+}
+.lastitem img{
+    width: 100%;
+   
+    
+}
+
+
+h1{
+    font-weight: bolder;
+    margin: 5vh 0 5vh 8vw; 
+}

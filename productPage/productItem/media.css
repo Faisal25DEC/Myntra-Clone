@@ -1,0 +1,131 @@
+
+
+@media only screen and (min-width: 1222px) and (max-width: 1393px) {
+    #product-page-item-div {
+            
+        grid-template-columns: repeat(4, 1fr);
+        
+      }
+  }
+  @media only screen and (min-width: 984px) and (max-width: 1222px) {
+    #product-page-item-div {
+            
+        grid-template-columns: repeat(3, 1fr);
+                
+      }
+      #sort-drop {
+        
+        width: 15rem;
+      }
+  }
+  @media only screen and (min-width: 757px) and (max-width: 984px) {
+    #product-page-item-div {
+            
+        grid-template-columns: repeat(2, 1fr);
+                
+      }
+      #sort-drop {
+        
+        width: 15rem;
+      }
+  }
+  @media only screen and (min-width: 550px) and (max-width: 757px) {
+    #product-page-item-div {
+            
+        grid-template-columns: repeat(1, 1fr);
+        
+                
+      }
+      #productSidebar{
+        width: 250px;
+      }
+      #sort-drop {
+        margin-left: -6rem;
+        /* width: 18rem; */
+      }
+  }
+  @media only screen and  (max-width: 550px) {
+    #productSidebar {
+            
+        display: none;
+        width: 0px;
+        margin: 0px;
+                
+      }
+      #productParent_0{
+        /* margin: -5px; */
+        
+      }
+      #productParent_1{
+        margin-left: -0.4rem;
+        /* margin-right: 0.4rem; */
+        padding: 0px;
+        /* border: 1px solid #000; */
+        
+      }
+      #wishlist-btn{
+        display: block;
+        margin: 0.2rem 0;
+        margin-left: 0.43rem;
+      }
+
+      #product-page-product-div{
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+        /* border: 1px solid #000; */
+      }
+      #product-page-item-div {
+            
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0;
+        margin: 0;
+        padding: 0px;
+       
+                
+      }
+      #product-filter-div >div:last-child,#product-filter-div{
+        display: none;
+        margin: 0px;
+       
+        
+      }
+      #product-page-list, #product-page-footer-parent-1,#product-page-footer-parent-2,hr{
+       display: none;
+       margin: 0px;
+      }
+     
+     /* mob div */
+       
+     #mob-div{
+       display: flex;
+     }
+     /* mob div */
+
+
+      /* --------- */
+
+
+      #product-page-item-div div:hover #wishlist-btn{
+        display: block;
+        
+      }
+      
+      #product-page-item-div div:hover {
+        box-shadow:  rgba(255, 253, 253, 0.06) 0px 2px 4px -1px;
+      }
+      #product-page-item-div div:hover h3{
+        
+        display: block;
+        
+        transform: scale(1); 
+      }
+      #product-page-item-div div:hover #imgDiv{
+         height: 100%;
+         
+        
+         
+      }
+     
+      
+  }

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./admin.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="left">
+        <img
+          src="https://1000logos.net/wp-content/uploads/2022/08/Myntra-Logo-2015.png"
+          alt=""
+        />
+        <h2>Dashboard</h2>
+      </div>
+      <div class="right">
+        <a href="/index.html">Home Page</a>
+        <div class="admin-profile">
+          <div class="profile">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <ul class="hidden">
+            <b>Hi Admin</b>
+            <li><a href="">Men</a></li>
+            <li><a href="">Women</a></li>
+            <li><a href="">Kids</a></li>
+            <li><a href="">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="admin-body-wrapper">
+      <div class="admin-wrapper">
+        <div id="heading">
+          <h1>
+            <i class="fa-solid fa-sitemap"></i> Total Items: <span>0</span>
+          </h1>
+          <div class="item-desc">
+            <h2 id="men">
+              <i class="fa-solid fa-person" style="color: #d38d0a"></i> Men
+              <span></span>
+            </h2>
+            <h2 id="women">
+              <i
+                class="fa-sharp fa-solid fa-person-dress"
+                style="color: #c90ad3"
+              ></i>
+              Women <span></span>
+            </h2>
+            <h2 id="kids">
+              <i class="fa-solid fa-child"></i> Kids
+              <span></span>
+            </h2>
+          </div>
+        </div>
+        <form action="" id="adminform">
+          <select name="category" id="category">
+            <option value="">Choose Category</option>
+            <option value="Men">Men</option>
+            <option value="Women">Women</option>
+            <option value="Kid">Kid</option>
+          </select>
+          <select name="mentype" id="mentype">
+            <option value="">Choose Men Type</option>
+            <option value="Men T-Shirt">T-shirt</option>
+            <option value="Mean Jean">Jean</option>
+          </select>
+          <select name="womentype" id="womentype">
+            <option value="">Choose Women Type</option>
+            <option value="Women Top">Top</option>
+            <option value="Women Jean">Jean</option>
+          </select>
+          <select name="kidtype" id="kidtype">
+            <option value="">Choose Kid Type</option>
+            <option value="Kid T-Shirt">T-Shirt</option>
+            <option value="Kid Jean">Jean</option>
+          </select>
+          <input type="url" id="imageurl1" placeholder="Image URL" />
+          <input type="url" id="imageurl2" placeholder="Image URL" />
+          <input type="url" id="imageurl3" placeholder="Image URL" />
+          <input type="url" id="imageurl4" placeholder="Image URL" />
+          <input type="url" id="imageurl5" placeholder="Image URL" />
+          <input id="color" type="text" placeholder="Color" />
+          <input type="text" id="name" placeholder="Name" />
+          <input type="text" id="brand" placeholder="Brand" />
+          <input type="number" id="price" placeholder="price" />
+          <input
+            type="number"
+            id="discountedprice"
+            placeholder="Discounted Price"
+          />
+          <button id="submit" type="submit">Add Item</button>
+        </form>
+      </div>
+      <div class="admin-table-wrapper">
+        <h2>Items Added</h2>
+        <select name="" id="filterCategory">
+          <option value="">Choose Category</option>
+          <option value="Men">Men</option>
+          <option value="Women">Women</option>
+          <option value="Kid">Kid</option>
+        </select>
+        <div class="admin-table"></div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

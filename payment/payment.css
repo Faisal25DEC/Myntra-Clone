@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+}
+.payment-wrapper {
+  width: 50%;
+  position: absolute;
+  left: 15%;
+  top: 40%;
+}
+.tab {
+  float: left;
+  /* border: 1px solid #ccc; */
+  background-color: #f9f9f9f7;
+  width: 25%;
+  height: 500px;
+  border-radius: 10px 0 0 10px;
+}
+
+.tab button {
+  display: block;
+  background-color: #f9f9f9f7;
+  color: black;
+  font-weight: bold;
+  padding: 22px 16px;
+  width: 90%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 13px;
+  margin: 5%;
+  border-radius: 4px;
+}
+
+.tab button:hover {
+  background-color: #bee9f7;
+}
+
+.tab button.active {
+  background-color: #f9f9f9f7;
+  border-left: 4px solid rgb(230, 24, 58);
+  border-radius: 0px;
+  color: rgb(247, 26, 63);
+}
+
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 500px;
+  border-radius: 0 10px 10px 0;
+}
+.recommended {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+  font-weight: bold;
+  margin-left: 5%;
+}
+.tabcontent h5 {
+  margin-top: 10%;
+  margin-bottom: 8%;
+  margin-left: 5%;
+}
+.cash-on-delivery i {
+  margin-left: 59%;
+}
+.google-pay {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* justify-content: space-around; */
+}
+.google-pay img {
+  width: 7%;
+  margin-left: 65%;
+}
+.phonpe {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.phonpe img {
+  width: 7%;
+  margin-left: 72%;
+}
+.pay-now {
+  border: none;
+  color: whitesmoke;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0.6rem 2rem;
+  letter-spacing: 0.5px;
+  border-radius: 4px;
+  background-color: rgb(244, 88, 114);
+}
+#secondTab {
+  display: grid;
+  place-items: center;
+}
+#secondTab .cash-on-delivery {
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  margin-top: 10%;
+  margin-left: 10px;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  gap: 5%;
+}
+#secondTab .cash-on-delivery h5 {
+  margin: 0%;
+}
+#secondTab .cash-on-delivery input {
+  height: 40px;
+  outline: none;
+  border: 0.5px solid grey;
+}
+#secondTab .cash-on-delivery p {
+  background-color: rgb(225, 223, 223);
+
+  font-weight: 500;
+  border-radius: 2px;
+  font-size: 14px;
+  color: rgb(95, 94, 94);
+}
+.credit {
+  margin-left: 20%;
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.credit input {
+  outline: none;
+  border: 0.5px solid grey;
+  height: 50px;
+  width: 80%;
+}
+.credit button {
+  width: 80%;
+}
+.credit-banner {
+  background-color: rgb(255, 255, 255);
+  width: 80%;
+  border: solid 0.3px rgb(218, 218, 218);
+  display: flex;
+  margin-left: 10%;
+  margin-top: 10%;
+  gap: 20px;
+  align-items: center;
+  padding: 5px;
+}
+.credit-banner .credit-banner-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 8px;
+}
+.credit-banner img {
+  width: 14%;
+  height: 96%;
+}
+.credit-banner .credit-banner-desc h6 {
+  font-weight: bold;
+}
+.credit-banner .credit-banner-desc p {
+  color: grey;
+  font-size: 12px;
+}
+
+#thirdTab {
+}
+.date-and-cvv {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.top {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20%;
+}
+.offer-desc {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.offer-desc-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10px;
+}
+.offer-desc img {
+  width: 12%;
+  height: 95%;
+}
+.offer-desc-text p {
+  font-size: 12px;
+  color: grey;
+}
+.offers {
+  flex-basis: 60%;
+  height: 130px;
+  border: solid 0.5px rgb(202, 201, 201);
+  padding: 10px;
+  padding-left: 10px;
+  display: grid;
+  place-items: center;
+}
+.payment-desc {
+  flex-basis: 30%;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+nav img {
+  width: 10%;
+}
+nav > p {
+  font-weight: bold;
+  letter-spacing: 2.5px;
+  font-size: 14px;
+  color: grey;
+  
+}
+nav > p > img {
+  margin-right: 5%;
+  width: 25%;
+}
+nav > p:last-child{
+  display: flex;
+  align-items: center;
+}
+.payment-desc {
+  display: flex;
+  flex-direction: column;
+}
+.payment-desc > div {
+  display: flex;
+  justify-content: space-between;
+}
+.payment-desc > .total-price > p {
+  font-weight: bold;
+}
+.tabcontent .radio_content {
+  display: none;
+}
+
+.content input {
+  height: 30px;
+  margin-bottom: 20px;
+}
+.recommended label:hover{
+  cursor: pointer;
+  text-decoration: underline;
+  color: rgba(0, 0, 0, 0.704);
+  
+} 
+
+#cartbar p > #second{
+  
+  
+  padding-bottom: 5px;
+  font-weight: 500;
+  letter-spacing: 0.15rem;
+  font-size: 0.76rem;
+}
+#cartbar p > #first{
+ 
+  padding-bottom: 5px;
+  font-weight: 500;
+  letter-spacing: 0.15rem;
+  font-size: 0.76rem;
+}
+#cartbar p > #third{
+  color: #14cda8;
+  border-bottom: 2px solid  #14cda8;
+  padding-bottom: 5px;
+  font-weight: 500;
+  letter-spacing: 0.15rem;
+  font-size: 0.76rem;
+}
+
+/*  */
+#cartbar{
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #F5F5F6;
+  margin: 4rem -8px;
+  margin-top: -0.5rem;
+  color: gray;
+  align-items: center;
+  height: 79px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#cartbar >div{
+  
+  height: 50px;
+  display: flex;
+ align-items: center;
+ margin: 5px 20px;
+ justify-content: space-between;
+
+}
+#cartbar span{
+  letter-spacing: 2.5px;
+ font-size: 0.8rem;
+ font-weight: 700;
+
+}
+#cartbar >div>img{
+  height: 70%;
+  cursor: pointer;
+}
+#cartbar >div:first-child{
+  margin-left: 50px;
+}
+#cartbar >div:last-child{
+  margin-right: 50px;
+}
+
+#cartbar p > *{
+  cursor: pointer;
+}

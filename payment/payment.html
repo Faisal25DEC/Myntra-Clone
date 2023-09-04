@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://images.indianexpress.com/2021/01/myntra.png?w=414" >
+
+    <title>PAYMENT</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="payment.css" />
+  </head>
+
+  <body>
+    <div id="cartbar">
+      <div>
+        <a href=""></a>
+        <img
+          src="https://www.exchange4media.com/news-photo/110582-image-2021-01-30T121730.834.jpg"
+          alt="myntraLogo"
+          id="homePage"
+        />
+      </div>
+
+      <div>
+        <p>
+          <span id="first">BAG </span>---------
+          <span id="second">ADDRESS</span> ---------
+          <span id="third">PAYMENT</span>
+        </p>
+      </div>
+      <div>
+        <img
+          src="https://constant.myntassets.com/checkout/assets/img/sprite-secure.png"
+          alt="securelogo"
+        />
+        <span>100% SECURE</span>
+      </div>
+    </div>
+    <div class="top">
+      <div class="offers">
+        <div class="offer-desc">
+          <img
+            src="https://1000logos.net/wp-content/uploads/2021/03/Paytm_Logo.jpg"
+            alt=""
+          />
+          <div class="offer-desc-text">
+            <h6>Flat Rs. 200 Cashback</h6>
+            <p>On a min spend of Rs.500 get Rs. 200 cashback on first order</p>
+          </div>
+        </div>
+      </div>
+      <div class="payment-desc">
+        <h5>Payment</h5>
+        <p>Price Details</p>
+        <div class="payment-mrp">
+          <p>Total MRP</p>
+          <p>₹2200</p>
+        </div>
+        <div class="payment-discount">
+          <p>Discounted on MRP</p>
+          <p>-₹1000</p>
+        </div>
+        <div class="convenience-fee">
+          <p>Convenience Fee</p>
+          <p>FREE</p>
+        </div>
+        <div class="total-price">
+          <p>Total</p>
+          <p>₹5500</p>
+        </div>
+      </div>
+    </div>
+    <div class="payment-wrapper">
+      <div class="tab">
+        <button
+          class="tablinks"
+          onclick="openTab(event, 'firstTab')"
+          id="defaultOpen"
+        >
+          <i class="fa-regular fa-star"></i> Recommended
+        </button>
+        <button class="tablinks" onclick="openTab(event, 'secondTab')">
+          <i class="fa fa-duotone fa-money-bill"></i> Cash On Delivery
+        </button>
+        <button class="tablinks" onclick="openTab(event, 'thirdTab')">
+          <i class="fa-solid fa-credit-card"></i> Credit/Debit
+        </button>
+        <button
+          class="tablinks"
+          onclick="openTab(event, 'firstTab')"
+          id="defaultOpen"
+        >
+          <i class="fa-brands fa-paypal"></i> Phonpe/Google Pay/BHIM
+        </button>
+        <button class="tablinks" onclick="openTab(event, 'secondTab')">
+          <i class="fa-solid fa-wallet"></i> Paytm Wallets
+        </button>
+        <button class="tablinks" onclick="openTab(event, 'thirdTab')">
+          <i class="fa-sharp fa-solid fa-building-columns"></i> Net Banking
+        </button>
+      </div>
+
+      <div id="firstTab" class="tabcontent">
+        <h5>Recommended Payment Options</h5>
+        <div class="radio_tabs recommended">
+          <div class="cash-on-delivery">
+            <input
+              type="radio"
+              id="cash-on-delivery"
+              name="cash-on-delivery"
+              value="HTML"
+              class="cod-input"
+            />
+            <label
+              for="cash-on-delivery"
+              class="radio_wrap"
+              data-radio="radio_1"
+              >Cash On Delivery</label
+            >
+            <i class="fa fa-duotone fa-money-bill"></i>
+          </div>
+          <div class="content radio_content radio_1">
+            <button class="pay-now">Pay Now</button>
+          </div>
+          <div class="google-pay">
+            <input
+              id="google-pay"
+              type="radio"
+              name="google-pay"
+              class="cod-input"
+            />
+            <label class="radio_wrap" data-radio="radio_2" for="google-pay"
+              >Google Pay</label
+            >
+            <img
+              src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png"
+              alt=""
+            />
+          </div>
+          <div class="content radio_content radio_2">
+            <input type="text" placeholder="Enter UPI" /><br />
+            <button class="pay-now">Pay Now</button>
+          </div>
+          <div class="phonpe">
+            <input id="phonpe" type="radio" name="phonpe" class="cod-input" />
+            <label class="radio_wrap" data-radio="radio_3" for="phonpe"
+              >Phonpe</label
+            >
+            <img
+              src="https://pixlok.com/wp-content/uploads/2021/02/PhonePe-Logo-Svg.jpg"
+              alt=""
+            />
+          </div>
+          <div class="content radio_content radio_3">
+            <input type="text" placeholder="Enter UPI" /><br />
+            <button class="pay-now">Pay Now</button>
+          </div>
+        </div>
+      </div>
+      <div id="secondTab" class="tabcontent">
+        <div class="cash-on-delivery">
+          <h5>Cash On delivery (Cash/UPI)</h5>
+          <p>₹10 will be charged for cash on delivery option</p>
+          <h4></h4>
+          <input placeholder="Enter the code above" tyep="text" /><br /><br />
+          <button class="pay-now">Place Order</button><br />
+        </div>
+      </div>
+
+      <div id="thirdTab" class="tabcontent">
+        <div class="credit-banner">
+          <img
+            src="https://companieslogo.com/img/orig/KOTAKBANK.NS-36440c5e.png?t=1593960269"
+            alt=""
+          />
+          <div class="credit-banner-desc">
+            <h6>7.5% instant discount</h6>
+            <p>On every spend with myntra axis card</p>
+          </div>
+        </div>
+        <div class="credit">
+          <form action="" id="credit-form">
+            <input type="number" placeholder="Card Number" id="cardNumber" />
+            <input type="text" placeholder="Name On Card" id="name" />
+            <div class="date-and-cvv">
+              <input type="text" placeholder="Date" id="date" />
+              <input type="number" placeholder="CVV" id="cvv" />
+            </div>
+            <button for="submit" class="pay-now">Pay Now</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="payment.js"></script>
+</html>
+

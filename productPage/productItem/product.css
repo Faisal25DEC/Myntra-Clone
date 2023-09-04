@@ -1,0 +1,388 @@
+hr{
+ 
+  opacity: 0.25;
+}
+#mob-div{
+ 
+ 
+  display: flex;
+  justify-content: space-evenly;
+  position: fixed;
+  top: 93%;
+  width: 100%;
+  display: none;
+  z-index: 1;
+  scroll-behavior: auto;
+  background-color: #ffffff;
+}
+#mob-div div{
+  
+}
+
+/* 0 */
+#productParent_0{
+  margin-left: 1%;
+}
+
+
+
+/* 0 */
+
+#productParent_1 {
+  display: flex;
+  /* border: 1px solid #000; */
+  /* height: 500px; */
+}
+#productSidebar {
+  margin-left: 1.4rem;
+  width: 210px;
+  /* border: 1px solid #c51414; */
+}
+#productSidebar form label{
+  font-size: 14px;
+ color: #4b4b4f;
+  
+}
+#productSidebar form input{
+    margin: 4px;
+    scale: 1;
+    /* opacity: 0.35; */
+    /* background-color: rgb(86, 4, 4); */
+   
+}
+#productParent_0 > div:first-child p{ 
+  font-size: 14px;
+}
+#productParent_0 > div:first-child span,#productParent_0 > div:first-child p+p{ 
+  font-weight: bold;
+}
+#productSidebar h5{
+opacity: 0.7;
+font-size: 15px;
+}
+
+input[type="checkbox"]{
+  appearance: none;
+  
+}
+input[type="checkbox"]::before{
+  content: "✔";
+  padding: 0rem 0.1rem ;
+  /* color: rgb(112, 12, 12); */
+  color: transparent;
+  transform: scale(0);
+}
+input[type="checkbox"]:checked::before{
+  
+  color: white;
+  background-color: #ff3f6c;
+}
+input[type="checkbox"]::before{
+  background-color: rgb(255, 255, 255);
+  transform: scale(1);
+  
+  border: 1px solid rgba(0,0,0,0.2);
+}
+
+
+
+#filterColor form input[type="radio"]{
+  appearance: none;
+}
+#filterColor form input[type="radio"]::before{
+  content: "✔";
+  padding: 0rem 0.1rem ;
+  /* color: rgb(112, 12, 12); */
+  color: transparent;
+  /* transform: scale(0); */
+}
+
+#filterColor form input[type="radio"]::before{
+  /* background-color: rgb(205, 7, 7); */
+  transform: scale(1);
+  border-radius: 1rem;
+  border: 1px solid rgba(0,0,0,0.4);
+}
+
+
+
+#productSidebar >div h4{
+  
+  /* border-color: gray; */
+  
+}
+
+
+
+
+
+
+
+
+
+ #product-page-product-div {
+  padding: 2%;
+  width: 84%;
+  /* border: 1px solid #0e2097; */
+}
+#product-page-item-div {
+  margin-bottom: 4rem;
+  display: grid;
+  /* grid-auto-rows: ; */
+ 
+  grid-template-columns: repeat(5, 1fr);
+  
+  
+  
+ gap: 2rem 2rem;
+  /* border: 1px solid #000; */
+}
+#product-page-item-div img {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s ease;
+  
+}
+
+
+#product-page-item-div>div h3{
+  margin: 0;
+  margin-top: 10px;
+  margin-left: 0.5rem;
+  font-size: 1rem;
+  opacity: 0.7;
+  
+}
+
+#product-page-item-div >div p{
+  margin: 0.2rem 0px 0.6rem 0.5rem;
+  
+  font-size: 80%;
+  
+  
+}
+#price-small-div{
+  
+  
+  margin-left: 0.2rem;
+  margin-bottom: 0.4rem;
+  display: flex;
+  /* justify-content: space-around; */
+  gap: 5px;
+  bottom: 0;
+  /* border: 1px solid #000; */
+  bottom: 0;
+}
+#price-small-div p{
+  margin: 0;
+  font-size: 0.8rem;
+    
+}
+#price-small-div p:nth-child(1){
+  
+  font-weight: bold;
+}
+#price-small-div p:nth-child(2){
+  text-decoration: line-through;
+  color: gray;
+}
+
+#price-small-div p:last-child{
+  color: #ffae95;
+}
+
+
+#wishlist-btn{
+  margin: auto auto;  
+  width: 90%;
+  padding: 0.4rem 0rem;
+  background-color: white;
+  border: 1px solid #0000002f;
+  display: none;
+  /* position: absolute; */
+}
+#wishlist-btn:active{
+   background-color: #ff3f6c;
+   
+}
+/* #item >div>button {
+  
+  visibility: hidden;
+} */
+#product-page-item-div{
+  /* position: absolute; */
+}
+#product-page-item-div >div{
+   position: relative;
+   /* border: 1px solid #000; */
+   display: flex;
+   flex-direction: column;
+  
+}
+#namePriceDiv{
+  justify-self: flex-end;
+  /* border: 1px solid #000; */
+  /* max-height: 4rem; */
+  display: flex;
+  /* align-items: end;  */
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+   flex-grow: 1; 
+  
+}
+#product-page-item-div div #img-img{
+ 
+ width: 100%;  
+ /* height: 100%; */
+ 
+}
+#product-page-item-div div #imgDiv{
+ 
+  width: 100%;  
+  overflow: hidden;
+  
+ }
+
+#product-page-item-div div:hover #wishlist-btn{
+  display: block;
+}
+#product-page-item-div >div:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+#product-page-item-div div:hover h3{
+  display: none;
+  transition: 0.4s;
+  transform: scale(1.2); 
+}
+#product-page-item-div div:hover #imgDiv{
+   height: 70%;
+   transition: 0.4s;
+  
+   
+}
+#product-page-item-div div:hover #namePriceDiv{
+  /* flex-grow: 0;  */
+}
+
+/* page button -------------------------------------------*/
+
+
+#product-page-list{
+  margin-top: 2rem;
+  display: flex;
+}
+#product-page-list>div:nth-child(1){
+   width: 30%;
+   font-size: 0.8rem;
+   /* border: 1px solid #000; */
+}
+#product-page-list>div:nth-child(2){
+   width: 30%;
+   /* border: 1px solid #000; */
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+}
+#product-page-list>div:nth-child(2) button{
+  border: 1px solid #7a7878;
+  
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  height: 1.9rem;
+  
+}
+#product-page-list>div:nth-child(2) button:active{
+  
+}
+#product-page-list>div:nth-child(2) button:hover{
+  /* border: 1px solid gray; */
+  
+}
+#product-page-list>div:nth-child(3){
+  width: 20%;
+  /* border: 1px solid #000; */
+  display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+}
+
+#btn-next{
+  height: 2.5rem;
+  width: 6rem;
+  background-color: white;
+  border: 1px solid rgba(0,0,0,0.2);
+  font-weight: bold;
+  /* margin-left: ; */
+}
+/* page button -------------------------------------------*/
+
+
+
+/* footer -------------------------------------*/
+#product-page-footer-parent-1{
+  display: flex;
+  
+  /* border: 1px solid #000; */
+  margin: 5% auto;
+  width: 68%;
+  gap: 3.8rem;
+  font-size: 0.85rem;
+}
+#footer-buy{
+  text-align: justify;
+  width: 65%;
+  margin-bottom: 4rem;
+  /* border: 1px solid #c11919; */
+}
+#footer-buy >p{
+  
+  color: #70707a;
+  /* border: 1px solid #c11919; */
+}
+#footer-price-list{
+  
+  width: 35%;
+  
+}
+
+ul{
+  color: rgb(85, 83, 83);
+  margin-left: -1.5rem;
+  
+}
+ul  ul{
+  color: gray;
+  margin: 1rem;
+  margin-left: -2.5rem;
+}
+
+
+#video-embed{
+  width: 86%;
+  height: 16%;
+}
+
+table{
+  width: 100%;
+  
+}
+td{
+  text-align: left;
+  font-size: 0.8rem;
+  padding: 5px;
+}
+tr{
+  color: gray;
+  height: 2.5rem;
+}
+th{
+  font-size: 0.8rem;
+  padding: 5px;
+  text-align: left;
+}
+
+/* footer 2 -------------------------------------*/

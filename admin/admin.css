@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;500&display=swap");
+
+* {
+  font-family: "Poppins";
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+nav > .left {
+  width: 40%;
+  display: flex;
+  gap: 10%;
+}
+nav > .right {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 5%;
+}
+nav > .right > .admin-profile > .profile {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.admin-profile {
+  position: relative;
+}
+.admin-profile > ul {
+  position: absolute;
+  width: 200%;
+  top: 37px;
+  right: -2px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 10px;
+  list-style-type: none;
+}
+.admin-profile > ul > li {
+  margin: 5px;
+  border-bottom: solid 1px grey;
+}
+.admin-profile > ul > li > a {
+  text-decoration: none;
+}
+.profile {
+  display: grid;
+  place-items: center;
+}
+.right > a {
+  margin-top: 2%;
+  text-decoration: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+nav > .left > img {
+  width: 28%;
+  height: 100px;
+}
+nav > .left > h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+.hidden {
+  display: none;
+}
+
+.admin-body-wrapper {
+  display: flex;
+}
+.admin-wrapper {
+  width: 30%;
+  margin-left: 3%;
+}
+
+#heading {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+#heading > h1 {
+  text-align: center;
+}
+.item-desc {
+  display: flex;
+  justify-content: space-evenly;
+}
+#adminform {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 10px;
+  width: 100%;
+
+  /* margin: auto; */
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+
+  grid-gap: 10px 30px;
+}
+#adminform select {
+  width: 82%;
+  margin: auto;
+  height: 25px;
+  border-radius: 5px;
+}
+#adminform input {
+  width: 81.5%;
+  margin: auto;
+  height: 22px;
+  border: solid 1px black;
+  border-radius: 5px;
+}
+#submit {
+  width: 80%;
+  margin: auto;
+  border: none;
+  color: whitesmoke;
+  border-radius: 18px;
+  background-color: rgb(169, 7, 150);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 7px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+#submit:hover {
+  background-color: rgb(195, 8, 173);
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.admin-table-wrapper {
+  margin-left: 10%;
+  width: 67%;
+}
+.admin-table {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px 20px;
+}
+.admin-table-wrapper > h2 {
+  text-align: center;
+}
+.admin-table div > img {
+  width: 100%;
+  height: 60%;
+}
+.admin-table .type-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.admin-table .price-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.admin-table .price-container p {
+  font-size: 14px;
+}
+.admin-table .price-container p:nth-child(1) {
+  font-size: 14px;
+  color: black;
+}
+.admin-table .price-container p:nth-child(2) {
+  color: grey;
+  text-decoration: line-through;
+}
+.admin-table .price-container p:nth-child(3) {
+  color: rgb(245, 79, 107);
+}
+.adm .admin-table > div > div > p {
+}
+.admin-table > div > div:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  gap: -5px;
+}
+.admin-table > div > div:nth-child(3) > * {
+  margin: 0;
+}
+.admin-table > div > button {
+  width: 100%;
+  padding: 0.3rem 0;
+  background-color: rgb(255, 70, 70);
+  color: whitesmoke;
+  font-weight: 700;
+  font-size: 18px;
+  border: none;
+}
+.admin-table > div > div > p:nth-child(1) {
+  font-size: 16px;
+  color: black;
+  font-weight: bolder;
+}
+.admin-table > div > div > p:nth-child(2) {
+  font-size: 14px;
+  color: rgb(147, 147, 147);
+  font-weight: bold;
+}
+.admin-table > div > div > div > * {
+  margin: 0;
+  margin-bottom: 2%;
+}
